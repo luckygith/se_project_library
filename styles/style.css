@@ -399,29 +399,21 @@
   box-sizing: border-box;
   background: #1f1f1f;
   color: #fff;
-  margin: 0 auto;
+
   font-size: 16px;
   line-height: 20px;
-  display: flex;
-  position: relative;
-  margin: auto;
 }
 
 .footer__columns {
-  display: flex;
-  margin: 60px 102px 60px 80px;
-}
-
-.footer__column {
+  padding: 60px 102px 60px 80px;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
 }
 
 .footer__column_content_social {
-  margin-left: 100px;
-  width: 100px;
-  height: 100px;
+  margin-right: 0;
 }
 
 .footer__logo {
@@ -432,7 +424,6 @@
   /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
-  margin: 0;
   align-items: center;
 }
 
@@ -443,7 +434,7 @@
 .footer__column-heading {
   margin-top: 0;
   margin-bottom: 20px;
-  display: flex;
+
   font-size: 16px;
   margin-left: auto;
 }
@@ -456,6 +447,10 @@
   align-content: center;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
   max-width: 16px;
   max-height: 16px;
@@ -463,5 +458,4 @@
 
 .footer__copyright {
   position: absolute;
-  margin-top: 108px;
 }
