@@ -399,25 +399,30 @@
   box-sizing: border-box;
   background: #1f1f1f;
   color: #fff;
-
   font-size: 16px;
   line-height: 20px;
+  background-color: #2f80ed;
 }
 
 .footer__columns {
   padding: 60px 102px 60px 80px;
+  display: flex;
+
+footer__column {
+  flex-direction: row;
 }
 
 .footer__column_content_hours {
-  margin-left: auto;
+  padding-right: auto;
+  background-color: red;
 }
 
 .footer__column_content_social {
-  margin-right: 0;
+  padding-right: 0;
 }
 
 .footer__logo {
-  width: 100px;
+  max-width: 100px;
 }
 
 .footer__list {
@@ -428,15 +433,14 @@
 }
 
 .footer__list-item {
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .footer__column-heading {
-  margin-top: 0;
-  margin-bottom: 20px;
-
+  padding-top: 0;
+  padding-bottom: 20px;
   font-size: 16px;
-  margin-left: auto;
+  justify-content: space-between;
 }
 
 .footer__column-link {
@@ -457,5 +461,5 @@
 }
 
 .footer__copyright {
-  position: absolute;
+
 }
