@@ -42,10 +42,6 @@
   font-weight: bold;
 }
 
-.nav__link:hover {
-  color: #1f69c9;
-}
-
 .header__title {
   margin-top: 150px;
   margin-bottom: 32px;
@@ -82,10 +78,6 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
-}
-
-.header__link:hover {
-  color: #1f69c9;
 }
 
 .header__address {
@@ -163,10 +155,6 @@
   text-decoration: none;
 }
 
-.events__more:hover {
-  color: #1f69c9;
-}
-
 .events__cover {
   flex-grow: 1;
   flex-shrink: 0;
@@ -188,6 +176,7 @@
 }
 
 .person_name_feynman {
+  position: absolute;
   top: -30px;
   left: 319px;
 }
@@ -250,7 +239,6 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
-  color: #ffffff;
 }
 
 .staff__subtitle {
@@ -259,18 +247,17 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  color: #ffffff;
-  margin-bottom: 68px;
 }
 
+/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__cards {
   max-width: 760px;
+  max-height: 880px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   margin: auto;
   list-style-type: none;
-  padding-left: 0;
 }
 
 .card {
@@ -287,6 +274,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 6;
 }
 
 .card__title {
@@ -304,6 +292,7 @@
 
 .card__footer {
   margin: 0;
+  margin-top: 0;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
@@ -372,6 +361,7 @@
   font-weight: 500;
   z-index: 2;
   max-width: 154px;
+  align-items: flex start;
   position: relative;
 }
 
@@ -382,11 +372,15 @@
   max-width: 660px;
   z-index: 3;
   position: relative;
-  margin-left: 120px;
 }
 
 .about__paragraph {
   margin-top: 0;
+  margin-left: 120px;
+}
+.about__paragraph_second {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .about__circle {
@@ -403,49 +397,46 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: #1f1f1f;
-  padding: 60px 102px 60px 80px;
+  background: #1f1f1f;
   color: #fff;
-  background-color: pink;
+
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__columns {
-  display: flex;
+  padding: 60px 102px 60px 80px;
 }
 
 .footer__column_content_hours {
   margin-left: auto;
-  margin-right: 100px;
+}
+
+.footer__column_content_social {
+  margin-right: 0;
 }
 
 .footer__logo {
-  height: 21px;
-  width: 116px;
+  width: 100px;
 }
 
 .footer__list {
+  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  color: white;
+  align-items: center;
 }
 
 .footer__list-item {
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-}
-
-.footer__list-item:last-of-type {
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .footer__column-heading {
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
+  margin-top: 0;
   margin-bottom: 20px;
-  margin-top: auto;
+
+  font-size: 16px;
+  margin-left: auto;
 }
 
 .footer__column-link {
@@ -453,6 +444,7 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  align-content: center;
 }
 
 .footer__column-link:hover {
@@ -460,15 +452,10 @@
 }
 
 .footer__social-icon {
-  height: 16px;
-  width: 16px;
-  margin-right: 5px;
+  max-width: 16px;
+  max-height: 16px;
 }
 
 .footer__copyright {
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-  margin-top: 108px;
-  margin-bottom: 0px;
+  position: absolute;
 }

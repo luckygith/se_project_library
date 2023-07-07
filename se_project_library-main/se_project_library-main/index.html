@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Practicum Library</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practicum Library</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
   <body>
+    <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
     <div class="page">
       <header class="header">
         <nav class="nav">
@@ -18,24 +19,22 @@
             alt="Practicum Library Logo"
             class="nav__logo"
           />
-
+          <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a href="#staff-section" class="nav__link">Staff picks</a>
+              <a class="nav__link">Staff picks</a>
             </li>
             <li>
-              <a href="#events-content" class="nav__link">Events</a>
+              <a class="nav__link">Events</a>
             </li>
             <li>
-              <a href="#membership-section" class="nav__link"
-                >Become a member</a
-              >
+              <a class="nav__link">Become a member</a>
             </li>
             <li>
-              <a href="#about-section" class="nav__link">About</a>
+              <a class="nav__link">About</a>
             </li>
             <li>
-              <a href="#footer-contacts" class="nav__link">Contacts</a>
+              <a class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -53,7 +52,7 @@
         />
 
         <div class="header__footer">
-          <a href="#" class="header__link">About the library</a>
+          <a class="header__link">About the library &darr;</a>
           <p class="header__address">
             200 Success Avenue, The Town of Practicum
           </p>
@@ -63,9 +62,7 @@
       <main class="content">
         <section class="events">
           <div class="events__content">
-            <h2 class="events__heading" id="events-content">
-              Upcoming events:
-            </h2>
+            <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
               In honor of Joan Feynman: Women in astrophysics
             </h3>
@@ -119,21 +116,21 @@
             </div>
 
             <div class="person person_name_cannon">
+              <p class="person__caption">Annie Jump Cannon</p>
               <img
                 src="images/person_cannon.png"
                 alt="Photo of Annie Jump Cannon"
                 class="person__image person__image_size_m"
               />
-              <p class="person__caption">Annie Jump Cannon</p>
             </div>
 
             <div class="person person_name_mitchell">
+              <p class="person__caption">Maria Mitchell</p>
               <img
                 src="images/person_mitchell.png"
                 alt="Photo of Maria Mitchell"
                 class="person__image person__image_size_s"
               />
-              <p class="person__caption">Maria Mitchell</p>
             </div>
 
             <div class="person person_name_tarter">
@@ -145,9 +142,12 @@
               />
             </div>
           </div>
+
+          <!-- Start creating the composition here -->
         </section>
+
         <section class="staff">
-          <h2 class="staff__title" id="staff-section">Staff picks</h2>
+          <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <ul class="staff__cards">
             <li class="card">
@@ -221,9 +221,7 @@
         </section>
 
         <section class="membership">
-          <h2 class="membership__title" id="membership-section">
-            Becoming a library member is easy!
-          </h2>
+          <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
               <h3 class="step__title">
@@ -279,7 +277,7 @@
         </section>
 
         <section class="about">
-          <h2 class="about__title" id="about-section">About the library</h2>
+          <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
               Libraries are essential establishments in practically every city,
@@ -287,7 +285,7 @@
               way back in 2018, right as our humble town began bidding welcome
               to its very first citizens!
             </p>
-            <p class="about__paragraph">
+            <p class="about__paragraph about__paragraph_second">
               Since its initial opening, the library has seen nearly 342
               visitors each month. That's almost 50% of our population! So far,
               most citizens have enjoyed reading books and making use of our
@@ -302,54 +300,47 @@
           <div class="about__circle"></div>
         </section>
       </main>
-
       <footer class="footer">
-        <div class="footer__columns">
-          <div class="footer__column">
-            <img
-              class="footer__logo"
-              src="images/logo_white.png"
-              alt="Practicum logo"
-            />
-          </div>
-          <div class="footer__column footer__column_content_hours">
-            <h2 class="footer__column-heading">Hours</h2>
-            <ul class="footer__list">
-              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
-              <li class="footer__list-item">Weekends: 10am - 6pm</li>
-            </ul>
-          </div>
-          <div class="footer__column footer__column_content_social">
-            <h2 class="footer__column-heading" id="footer-contacts">
-              Social media
-            </h2>
-            <ul class="footer__list">
-              <li class="footer__list-item">
-                <a class="footer__column-link" href="#">
-                  <img
-                    class="footer__social-icon"
-                    src="images/facebook_white.svg"
-                    alt="Facebook logo"
-                  />
-                  Facebook</a
-                >
-              </li>
+          <div class="footer__columns">
+            <div class="footer__column">
+<img class="footer__logo" src="images/logo_white.png" alt="Practicum Logo">
 
+
+          </div>
+
+          <div class="footer__column footer__column_content_hours">
+            <h1 class="footer__column-heading">Hours</h1>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am-8pm</li>
+              <li class="footer__list-item">Weekends: 10am-6pm</li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column_content_social">
+            <h1 class="footer__column-heading">Social Media</h1>
+            <ul class="footer__list">
               <li class="footer__list-item">
-                <a class="footer__column-link" href="#">
+                <a href=""class="footer__column-link">
                   <img
-                    class="footer__social-icon"
+                    src="images/facebook_white.svg"
+                    alt="Facebook icon"
+                    class="footer__social_icon footer__column-link"
+                  />Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="" class="footer__column-link">
+                  <img
                     src="images/instagram_white.svg"
-                    alt="Instagram logo"
-                  />
-                  Instagram</a
+                    alt="instagram icon"
+                    class="footer__social_icon"
+                  />Instagram</a
                 >
               </li>
             </ul>
+
           </div>
+          <p class="footer__copyright">© 2023 Luckylin Villamor</p>
         </div>
-        <p class="footer__copyright">© 2023 Luckylin Villamor</p>
-      </footer>
-    </div>
+
   </body>
 </html>
