@@ -381,7 +381,6 @@
   z-index: 3;
   position: relative;
   margin-left: 120px;
-  background-color: pink;
   margin-bottom: auto;
 }
 
@@ -391,7 +390,7 @@
 }
 
 .about__paragraph:last-child {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
 .about__circle {
