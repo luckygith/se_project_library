@@ -193,19 +193,16 @@
 }
 
 .person_name_burbidge {
-  position: absolute;
   top: 96px;
   right: 125px;
 }
 
 .person_name_cannon {
-  position: absolute;
   bottom: 18px;
   right: 216px;
 }
 
 .person_name_mitchell {
-  position: absolute;
   left: 142px;
   bottom: 82px;
 }
@@ -307,6 +304,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #838383;
+  margin-top: auto;
 }
 
 .membership {
@@ -383,10 +381,17 @@
   z-index: 3;
   position: relative;
   margin-left: 120px;
+  background-color: pink;
+  margin-bottom: auto;
 }
 
 .about__paragraph {
   margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0 !important;
 }
 
 .about__circle {
