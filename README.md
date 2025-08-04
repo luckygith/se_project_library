@@ -68,3 +68,7 @@ Project meets all initial design and functionality goals.
 Add full responsive breakpoints for mobile and tablet devices.
 Include hover effects and interactive elements using CSS transitions or JavaScript.
 Optimize images for faster loading performance.
+
+# Links & Resources:
+
+LINK TO GITHUB: https://github.com/luckygith/se_project_library
